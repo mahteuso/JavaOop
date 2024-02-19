@@ -1,9 +1,13 @@
 package cursojava.classes;
 
 public class Aluno {
-    String name;
-    int age;
-    String dateBorn;
-    String rg;
-    String cpfNumber;
+    public String name;
+    public int age;
+    public String dateBorn;
+    public String rg;
+    public String cpfNumber;
+
+    public Aluno(String firstName, String lastName){
+        name = firstName+lastName;
+    }
 }
