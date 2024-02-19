@@ -76,11 +76,12 @@ public class Aluno {
     }
 
     public String getAprovacao(){
-        if (getMediaNota() > 5){
-            return " Aluno aprovado";
+        double media = this.getMediaNota();
+        if (media > 5){
+            return " O aluno está aprovado";
         }
         else{
-            return " Aluno reprovado";
+            return " O aluno está reprovado";
         }
     }
 }
