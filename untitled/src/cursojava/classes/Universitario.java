@@ -8,13 +8,13 @@ public class Universitario {
     private int registration;
 
 
-    private ArrayList<Materia> materiaList = new ArrayList();
+    private List<Materia> materiaList = new ArrayList<>();
 
-    public void setMateriaList(ArrayList<Materia> materia) {
+    public void setMateriaList(List<Materia> materia) {
         this.materiaList = materia;
     }
 
-    public ArrayList<Materia> getMateriaList() {
+    public List<Materia> getMateriaList() {
         return materiaList;
     }
 
@@ -48,6 +48,7 @@ public class Universitario {
         registration = registrationStudent;
     }
 
-
-
+    public Double getMedia() {
+        return (materiaList.getLast().getNote1() + materiaList.getLast().getNote2() + materiaList.getLast().getNote3()) / 3;
+    }
 }
