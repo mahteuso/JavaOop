@@ -1,5 +1,9 @@
 package cursojava.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 public class Aluno {
     private String name;
     private int age;
@@ -10,6 +14,15 @@ public class Aluno {
     private double nota3;
     private double nota4;
 
+    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
 
     public Aluno(String firstName, String lastName) {
         name = firstName + lastName;
@@ -83,5 +96,31 @@ public class Aluno {
         else{
             return " O aluno está reprovado";
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", cpfNumber='" + cpfNumber + '\'' +
+                ", nota1=" + nota1 +
+                ", nota2=" + nota2 +
+                ", nota3=" + nota3 +
+                ", nota4=" + nota4 +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return Objects.equals(name, aluno.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }

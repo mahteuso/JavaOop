@@ -25,5 +25,16 @@ public class FirstClassJava {
         mateus.setNota3(Double.parseDouble(nota3));
         mateus.setNota4(Double.parseDouble(nota4));
         System.out.println("O aluno: " + mateus.getName() + " recebeu uma média de: " + mateus.getMediaNota() + mateus.getAprovacao());
+        System.out.println(mateus);
+
+        System.out.println("--------------------");
+        Aluno aluno1 = new Aluno("Mateus", "Laranjeira");
+        Aluno aluno2 = new Aluno("Mateus", "Leite");
+
+        if (aluno1.equals(aluno2)) {
+            System.out.println("São iguais");
+        } else {
+            System.out.println("São diferentes");
+        }
     }
 }
