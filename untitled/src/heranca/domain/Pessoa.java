@@ -1,10 +1,13 @@
 package heranca.domain;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
 
     public void Imprimir(){
         System.out.println("nome: "+nome);
