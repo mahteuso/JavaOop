@@ -13,4 +13,13 @@ public class Cliente {
         this.tipoCliente = tipoCliente;
         this.tipoPagamento = tipoPagamento;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", tipoCliente=" + tipoCliente +
+                ", tipoPagamento=" + tipoPagamento +
+                '}';
+    }
 }
