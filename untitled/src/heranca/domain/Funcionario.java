@@ -3,6 +3,10 @@ package heranca.domain;
 public class Funcionario extends Pessoa{
     private String salario;
 
+    public Funcionario(String nome){
+        super(nome);
+    }
+
     public String getSalario() {
         return salario;
     }
@@ -16,4 +20,5 @@ public class Funcionario extends Pessoa{
         super.Imprimir();
         System.out.println("nome: "+salario);
     }
+
 }
