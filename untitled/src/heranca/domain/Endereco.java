@@ -1,5 +1,4 @@
 package heranca.domain;
 
-public class Pessoa {
-
+public class Endereco {
 }
