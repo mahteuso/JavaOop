@@ -6,6 +6,7 @@ import java.io.IOException;
 public class TestException01 {
     public static void main(String[] args) {
         criaArquivo();
+        System.out.println(imprimi());
     }
 
     private static void criaArquivo(){
@@ -17,5 +18,18 @@ public class TestException01 {
         } catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    private static String imprimi(){
+        try{
+            System.out.println("Abrindo arquivo");
+            System.out.println("Lendo arquivo");
+            return "Mensagem do return";
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            System.out.println("Fechando arquivo antes do return");
+        }
+        return null;
     }
 }
