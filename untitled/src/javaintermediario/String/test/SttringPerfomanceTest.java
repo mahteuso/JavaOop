@@ -1,4 +1,4 @@
-package javaintermediario.wrapper.test;
+package javaintermediario.String.test;
 
 public class SttringPerfomanceTest {
     public static void main(String[] args) {
