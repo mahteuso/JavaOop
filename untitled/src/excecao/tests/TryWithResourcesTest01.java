@@ -22,7 +22,7 @@ public class TryWithResourcesTest01 {
     public static void readFile() {
         Reader reader = null;
         try {
-            reader = new BufferedReader(new FileReader("test.txt"));
+            reader = new BufferedReader(new FileReader("test.txt")); // normal try and catch
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
