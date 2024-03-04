@@ -8,6 +8,11 @@ public class WrapperTest01 {
 
         boolean falso = Boolean.parseBoolean("False");
         System.out.println(falso);
+        System.out.println("---------------------------------------");
 
+        System.out.println(Character.isDigit('A'));
+        System.out.println("---------------------------------------");
+        System.out.println(Character.isAlphabetic('A'));
+        System.out.println("---------------------------------------");
     }
 }
