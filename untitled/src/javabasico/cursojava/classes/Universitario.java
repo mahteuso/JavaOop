@@ -48,7 +48,5 @@ public class Universitario {
         registration = registrationStudent;
     }
 
-    public Double getMedia() {
-        return (materiaList.getLast().getNote1() + materiaList.getLast().getNote2() + materiaList.getLast().getNote3()) / 3;
-    }
+
 }
