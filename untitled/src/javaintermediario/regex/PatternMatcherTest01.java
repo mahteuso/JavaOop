@@ -12,9 +12,12 @@ public class PatternMatcherTest01 {
         // \S -> Todos os caracteres excuindo os brancos
         // \w -> Exclui todos os caracteres especiais
         // \W -> Retorna caracteres especiais e espaços
+        // ? repete zero ou uma vez
+        // * repete zero ou mais vezes
+        // + repete uma ou mais vezes
         // [] range
-        String regex = "[a-z_@0-9]+[a-z]+(.com.br|.br|.com)";
-        String text = "m_ateus@ufscar.com.br";
+        String regex = "[a-z_@0-9]+[a-z]+(\\.com\\.br|\\.br|\\.com)";
+        String text = "m_ateus@ufscar.br, rogerio@hotmail.com, marco@gmail.com.br";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
