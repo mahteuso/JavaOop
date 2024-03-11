@@ -10,5 +10,15 @@ public class NormalizeTest01 {
         Path path01 = Paths.get(dirProjects, arquivoTxt);
 
         System.out.println(path01.normalize());
+
+        // Resolvendo paths
+        Path absolute = Paths.get("/arquivo/folder");
+        Path relative = Paths.get("new");
+        Path file = Paths.get("file.txt");
+
+        System.out.println(absolute.resolve(relative).resolve(file));
+        System.out.println(relative.resolve(absolute));
+        System.out.println(relative.resolve(file));
+
     }
 }
