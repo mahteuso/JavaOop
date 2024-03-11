@@ -1,0 +1,2 @@
+Estou aprendendo a escrever num arquivo usando o Javinha
+Estou aprendendo a escrever uma nova linha, utilizando a classe BufferedWrite
